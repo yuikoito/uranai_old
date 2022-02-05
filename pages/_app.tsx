@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import '@fontsource/m-plus-rounded-1c';
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
+import '../styles/react-datepicker.css';
 
 const AppContainer = styled.div`
   font-family: 'M PLUS Rounded 1c';
