@@ -5,6 +5,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
+    "now-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && yarn build",
     "prepare": "husky install",
     "start": "next start"
   },
@@ -12,12 +13,16 @@
     "@chakra-ui/react": "^1.8.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@fontsource/m-plus-rounded-1c": "^4.5.1",
+    "axios": "^0.25.0",
+    "canvas": "^2.9.0",
     "framer-motion": "^6.2.4",
     "next": "12.0.10",
     "react": "17.0.2",
     "react-datepicker": "^4.6.0",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@types/node": "17.0.15",
