@@ -1,5 +1,4 @@
 import {
-  Box,
   Icon,
   Input,
   InputGroup,
@@ -16,15 +15,20 @@ import React, { useRef, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import { AiFillCaretDown } from 'react-icons/ai';
 
-const Calender = () => {
-  const [date, setDate] = useState<Date>(new Date());
+type Props = {
+  date: Date | undefined;
+  setDate: React.Dispatch<React.SetStateAction<Date | undefined>>;
+};
+
+const Calender = ({ date, setDate }: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [calenderState, setCalenderState] = useState<
     'year' | 'month' | 'date' | 'selected'
   >('year');
   const initialRef = useRef(null);
   const finalRef = useRef(null);
-  const formattedDate = (date: Date) => {
+  const formattedDate = (date: Date | undefined) => {
+    if (!date) return;
     const yyyy = date.getFullYear();
     const mm = date.getMonth() + 1;
     const dd = date.getDate();
@@ -71,7 +75,7 @@ const Calender = () => {
     }
   };
   return (
-    <Box boxShadow="lg" p="6" rounded="md" bg="white">
+    <>
       <InputGroup
         onClick={() => {
           onOpen();
@@ -80,7 +84,7 @@ const Calender = () => {
       >
         <Input
           placeholder="生年月日を選んでください"
-          value={formattedDate(date)}
+          defaultValue={formattedDate(date)}
         />
         <InputRightElement>
           <Icon as={AiFillCaretDown} color="green.500" />
@@ -107,7 +111,7 @@ const Calender = () => {
           </ModalBody>
         </ModalContent>
       </Modal>
-    </Box>
+    </>
   );
 };
 

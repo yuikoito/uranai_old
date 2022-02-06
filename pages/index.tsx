@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import React from 'react';
-import Calender from '../components/Calender';
 import Footer from '../components/Footer';
+import Form from '../components/Form';
 import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <Box>
       <Hero />
       <Box mt={'-20'}>
-        <Calender />
+        <Form />
       </Box>
       <Footer />
     </Box>

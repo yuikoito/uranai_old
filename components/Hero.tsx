@@ -1,4 +1,4 @@
-import { Box, Flex, Text, useBreakpointValue, VStack } from '@chakra-ui/react';
+import { Box, Center, Flex, Text } from '@chakra-ui/react';
 
 const Hero = () => {
   return (
@@ -9,11 +9,7 @@ const Hero = () => {
       backgroundSize={'cover'}
       backgroundPosition={'center center'}
     >
-      <VStack
-        w={'full'}
-        justify={'center'}
-        px={useBreakpointValue({ base: 4, md: 8 })}
-      >
+      <Center w={'full'} justify={'center'}>
         <Box boxShadow="lg" p="6" rounded="md" bg="white">
           <Text fontSize="md">
             うらなえーるは干支・生年月日・血液型を使った超細かすぎる占いです。
@@ -25,7 +21,7 @@ const Hero = () => {
             生年月日と血液型を入力するだけで簡単に診断できます。
           </Text>
         </Box>
-      </VStack>
+      </Center>
     </Flex>
   );
 };
