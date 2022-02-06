@@ -5,8 +5,8 @@ import Form from './Form';
 const Hero = () => {
   return (
     <Flex
-      w={'full'}
-      h={'70vh'}
+      w={'100vw'}
+      h={'100vh'}
       backgroundImage={'/images/top.jpg'}
       backgroundSize={'cover'}
       backgroundPosition={'center center'}
@@ -21,7 +21,7 @@ const Hero = () => {
           maxW={'90%'}
         >
           <Text fontSize="md">
-            細かすぎる占いは干支・生年月日・血液型を使った超細かすぎる占いです。
+            干支・生年月日・血液型を使った超細かすぎる占いです。
           </Text>
           <Text fontSize="md">
             占い結果は一日に一回更新され、診断結果は驚きの17,532通り！
