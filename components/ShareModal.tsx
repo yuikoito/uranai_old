@@ -34,7 +34,7 @@ const ShareModal = ({
 }: Props) => {
   const [isImageLoading, setIsImageLoading] = useState<boolean>(true);
   const snsUrl = () => {
-    const hash = '#うらなえーる';
+    const hash = '#細かすぎる占い';
     const shareText = '細かすぎる占いを体験しよう';
     switch (modalType) {
       case 'TWITTER':
@@ -51,7 +51,7 @@ const ShareModal = ({
     <Modal isOpen={isOpenModal} onClose={onClose} isCentered>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>うらなえーる</ModalHeader>
+        <ModalHeader>細かすぎる占い</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <VStack

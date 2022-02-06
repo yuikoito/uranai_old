@@ -72,7 +72,7 @@ const createOgp = async (
     ctx.fillText(line, 600, y);
   });
   ctx.font = '40px ipagp';
-  ctx.fillText('うらなえーる', 850, 550);
+  ctx.fillText('細かすぎる占い', 850, 550);
 
   const buffer = canvas.toBuffer();
 

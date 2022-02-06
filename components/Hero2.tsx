@@ -21,12 +21,12 @@ const Hero = () => {
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
             <Text as={'span'} color={'white'}>
-              うらなえーる
+              細かすぎる占い
             </Text>
           </Heading>
           <Box boxShadow="lg" p="6" rounded="md" bg="white">
             <Text fontSize="md">
-              うらなえーるは干支・生年月日・血液型を使った超細かすぎる占いです。
+              細かすぎる占いは干支・生年月日・血液型を使った超細かすぎる占いです。
             </Text>
             <Text fontSize="md">
               占い結果は一日に一回更新され、診断結果は驚きの17,532通り！
