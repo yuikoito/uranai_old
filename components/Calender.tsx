@@ -99,8 +99,10 @@ const Calender = ({ date, setDate }: Props) => {
       >
         <ModalOverlay />
         <ModalContent
+          w="400px"
           maxW="90%"
           h="400px"
+          bg="orange.50"
           alignItems="center"
           justifyContent="center"
         >
